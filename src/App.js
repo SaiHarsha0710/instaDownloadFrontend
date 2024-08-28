@@ -18,7 +18,7 @@ export default function App() {
     setGettingVideo(true);
     
     try {
-      const response = await axios.post("http://localhost:4000/urlSubmit", {
+      const response = await axios.post("https://instadownloadbackend-x4tw.onrender.com/urlSubmit", {
         url: url
       });
   
@@ -26,7 +26,7 @@ export default function App() {
   
       if (response.data.success) {
         try {
-          const videoResponse = await axios.get('http://localhost:4000/getVideoFile', {
+          const videoResponse = await axios.get('https://instadownloadbackend-x4tw.onrender.com/getVideoFile', {
             responseType: 'blob'
           });
   

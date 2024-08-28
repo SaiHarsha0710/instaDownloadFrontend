@@ -11,6 +11,7 @@ export default function App() {
 
   function handleChange(event) {
     setUrl(event.target.value);
+    console.log("1");
   }
 
   const handleSubmit = async (event) => {

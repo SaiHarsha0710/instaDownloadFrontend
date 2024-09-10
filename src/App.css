@@ -1,13 +1,13 @@
 /* Define your theme colors */
 :root {
-  --background-color: #000000;
-  --text-color: cyan;
-  --input-color1:#66ff00;
-  --input-border-color: #CC00FF;
+  --background-color: #FF7F50;
+  --text-color: #00FF00;
+  --input-color1: rgba(  255, 0, 255,0.87  );
+  --input-border-color: none;
   --input-bg-color: #333333;
-  --button-bg-color: #94c71f;
-  --button-bg-color1: #ff5733;
-  --button-hover-bg-color: aqua;
+  --button-bg-color: blanchedalmond;
+  --button-bg-color1: lavender;
+  --button-hover-bg-color: #FFD700;
   --box-shadow-color: #09ff00;
 }
 
@@ -20,18 +20,14 @@ body {
   align-items: center;
   height: 100vh;
   background-color: var(--background-color);
-  background-image: url('./images/insta.jpeg');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  
   color: var(--text-color);
 }
 
 .container {
-  background: rgba(20, 20, 20, 0.3);
+  background: #008B8B;
   padding: 50px;
   border-radius: 10px;
-  
   text-align: center;
   min-width: 50vh;
   min-height: 50vh;
@@ -47,19 +43,20 @@ h1 {
   font-size: 40px; /* Increase font size */
   margin-bottom: 20px;
   color: var(--text-color);
-  text-shadow: 0 0 10px var(--box-shadow-color);
+  
 }
 
 .input {
   width: 95%; /* Increase width */
-  padding: 20px; /* Increase padding */
+  padding: 17px; /* Increase padding */
   margin-bottom: 30px;
   border: 2px solid var(--input-border-color);
   border-radius: 4px;
   background-color: var(--input-bg-color);
   color: var(--input-color1);
   outline: none;
-  box-shadow: 0 0 10px var(--input-border-color);
+  
+  
 }
 
 .button, .button1 {
@@ -70,7 +67,6 @@ h1 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
   margin-top: 20px;
 }
 
@@ -80,13 +76,13 @@ h1 {
 
 .button:hover, .button1:hover {
   background-color: var(--button-hover-bg-color);
-  transform: scale(1.05);
+  
 }
 
 .message {
   margin-top: 20px;
-  color: var(--text-color);
-  text-shadow: 0 0 5px var(--box-shadow-color);
+  color: 	#00FFFF;
+  
 }
 
 /* Media Queries for Responsive Design */
